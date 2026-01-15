@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediCheck | Emergency Medicine Finder</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header">
+    <div class="pulse-line-container">
+        <svg class="static-pulse" viewBox="0 0 1000 100" preserveAspectRatio="none">
+            <path d="M0,50 L200,50 L220,20 L240,80 L260,50 L450,50 L470,10 L495,90 L520,50 L750,50 L770,30 L790,70 L810,50 L1000,50" />
+        </svg>
+    </div>
+
+    </div>
+        <i class="fas fa-stethoscope medical-icon stethoscope"></i>
+        <i class="fas fa-plus-square medical-icon plus"></i>
+    
+        <div class="header-content">
+            <div class="heart-container">
+                <i class="fas fa-heart-pulse heart-red"></i>
+            </div>
+            <h1 class="main-title">MEDICHECK | Emergency Medicine Finder</h1>
+            <p class="sub-title">Find life-saving medicines nearby (Ex: Kolkata), instantly.</p>
+            <p class="hero-paragraph">
+                MediCheck is a real-time healthcare bridge designed to save lives during the 'Golden Hour'. 
+                We provide an advanced directory connecting patients with nearby pharmacies, offering instant transparency 
+                on medicine availability and stock status.
+            </p>
+        </div>
+    </header>
+
+    <div class="search-section">
+        <div class="search-box">
+            <i class="fas fa-search"></i>
+            <input type="text" id="medInput" placeholder="Enter medicine name (e.g., Paracetamol)...">
+            <button onclick="searchMed()">Search</button>
+        </div>
+        
+        <div id="resultsArea" class="results-grid"></div>
+        <div class="pharmacy-card">
+    <div class="card-info">
+        <div class="card-actions">
+            <span class="stock-status available">Available</span>
+            <button class="call-reserve-btn">
+                <i class="fas fa-phone-alt"></i> Call & Reserve
+            </button>
+    </div>
+</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
